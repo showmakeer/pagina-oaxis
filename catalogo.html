@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="que-es.html">Qué es</a></li>
+                <li><a href="ninos.html">Niños</a></li>
+                <li><a href="deportistas.html">Deportistas</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 100px;">
+        <h1>Catálogo</h1>
+        <p><!-- Sección de Catálogo -->
+            <section id="catalogo" style="background-color: #f4f4f4; padding: 60px 20px; text-align: center;">
+                <h2 style="font-size: 36px; font-weight: bold; color: #333;">Catálogo de Productos OAXIS</h2>
+                <p style="font-size: 18px; color: #555; max-width: 800px; margin: 0 auto 40px;">Descubre nuestros productos de alta calidad diseñados para mejorar tu seguridad, rendimiento y bienestar. Cada producto de OAXIS ha sido cuidadosamente creado para brindar confianza, comodidad y estilo. Elige el que más se ajuste a tus necesidades.</p>
+            
+                <!-- Filtros (opcional) -->
+                <div style="margin-bottom: 40px;">
+                    <button style="background-color: #00796b; color: white; padding: 10px 20px; font-size: 16px; border-radius: 30px; border: none; cursor: pointer; margin: 0 10px;">
+                        Todos
+                    </button>
+                    <button style="background-color: #00796b; color: white; padding: 10px 20px; font-size: 16px; border-radius: 30px; border: none; cursor: pointer; margin: 0 10px;">
+                        Niños
+                    </button>
+                    <button style="background-color: #00796b; color: white; padding: 10px 20px; font-size: 16px; border-radius: 30px; border: none; cursor: pointer; margin: 0 10px;">
+                        Deportistas
+                    </button>
+                </div>
+            
+                <!-- Contenedor de Productos -->
+                <div class="product-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+                    
+                    <!-- Producto 1 -->
+                    <div class="product-card" style="background-color: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center;">
+                        <img src="ruta-a-imagen-producto1.jpg" alt="Producto OAXIS 1" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="product-info" style="padding: 20px;">
+                            <h3 style="font-size: 24px; color: #00796b;">Manilla OAXIS para Niños</h3>
+                            <p style="font-size: 16px; color: #555;">La manilla ideal para mantener a tus hijos seguros mientras disfrutan de su día. Con tecnología de rastreo y un diseño colorido y divertido.</p>
+                            <a href="producto-detalle1.html" style="background-color: #00796b; color: white; padding: 10px 20px; font-size: 16px; border-radius: 30px; text-decoration: none; display: inline-block; margin-top: 15px;">
+                                Ver Producto
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Producto 2 -->
+                    <div class="product-card" style="background-color: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center;">
+                        <img src="ruta-a-imagen-producto2.jpg" alt="Producto OAXIS 2" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="product-info" style="padding: 20px;">
+                            <h3 style="font-size: 24px; color: #00796b;">Manilla OAXIS para Deportistas</h3>
+                            <p style="font-size: 16px; color: #555;">Optimizada para el rendimiento de los deportistas. Con tecnología avanzada de monitoreo y materiales resistentes para soportar entrenamientos intensos.</p>
+                            <a href="producto-detalle2.html" style="background-color: #00796b; color: white; padding: 10px 20px; font-size: 16px; border-radius: 30px; text-decoration: none; display: inline-block; margin-top: 15px;">
+                                Ver Producto
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Producto 3 -->
+                    <div class="product-card" style="background-color: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); overflow: hidden; text-align: center;">
+                        <img src="ruta-a-imagen-producto3.jpg" alt="Producto OAXIS 3" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="product-info" style="padding: 20px;">
+                            <h3 style="font-size: 24px; color: #00796b;">Manilla OAXIS para Adultos</h3>
+                            <p style="font-size: 16px; color: #555;">La manilla perfecta para adultos que buscan una solución confiable para la seguridad personal. Ideal para todas las edades y con un diseño discreto y elegante.</p>
+                            <a href="producto-detalle3.html" style="background-color: #00796b; color: white; padding: 10px 20px; font-size: 16px; border-radius: 30px; text-decoration: none; display: inline-block; margin-top: 15px;">
+                                Ver Producto
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Puedes agregar más productos aquí siguiendo el mismo formato -->
+                </div>
+            </section>
+            
+
+    <script src="script.js"></script>
+</body>
+</html>

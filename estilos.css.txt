@@ -1,0 +1,91 @@
+/* estilos.css */
+
+body {
+    background-color: #f0f0f0; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Arial */
+    margin: 0; /* Sin márgenes */
+    padding: 20px; /* Espaciado interno */
+}
+
+h1 {
+    color: blue; /* Color del título */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espacio arriba */
+    font-size: 48px; /* Tamaño del texto */
+}
+
+h2 {
+    color: #333; /* Color del subtítulo */
+}
+
+p {
+    color: #555; /* Color del párrafo */
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 15px; /* Espacio abajo */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Bordes alrededor del párrafo */
+}
+
+.parpadeo {
+    animation: parpadear 1s infinite; /* Aplicar la animación de parpadeo */
+}
+
+@keyframes parpadear {
+    0% { opacity: 1; } /* Totalmente visible */
+    50% { opacity: 0; } /* Invisible */
+    100% { opacity: 1; } /* Totalmente visible */
+}
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}

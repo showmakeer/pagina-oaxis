@@ -1,0 +1,129 @@
+body {
+    background-color: #140211;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #e9e3e3;
+}
+
+header {
+    background-color: #990d03;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: rgb(0, 3, 3);
+    text-align: center;
+    margin: 0;
+    font-size: 48px;
+}
+
+h2 {
+    color: #eef1f5;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    background-color: #f5ecec;
+    color: #075245;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+.parpadeo {
+    animation: parpadear 3s infinite;
+}
+
+@keyframes parpadear {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #f5dfdf;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #521a04;
+    color: white;
+}
+
+tr:hover {
+    background-color: #1a5806; /* Efecto hover para filas */
+}
+/* Estilos para el botón interactivo */
+.cta-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    position: relative;
+    background-color: #ffdd00; /* Color amarillo brillante */
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px rgba(255, 221, 0, 0.7), 0 0 20px rgba(255, 221, 0, 0.8);
+    animation: pulsar 1.5s infinite alternate;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Animación de luces intermitentes */
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 221, 0, 0.7), 0 0 20px rgba(255, 221, 0, 0.8);
+        text-shadow: 0 0 5px #ffdd00, 0 0 10px #ffdd00;
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 221, 0, 1), 0 0 40px rgba(255, 221, 0, 1);
+        text-shadow: 0 0 10px #ffdd00, 0 0 20px #ffdd00;
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 221, 0, 0.7), 0 0 20px rgba(255, 221, 0, 0.8);
+        text-shadow: 0 0 5px #ffdd00, 0 0 10px #ffdd00;
+    }
+}
+
+/* Efecto de luz en el texto */
+.cta-button span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para el fondo de la página o área siguiente */
+#next-section {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
