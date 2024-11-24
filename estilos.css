@@ -127,3 +127,48 @@ tr:hover {
 html {
     scroll-behavior: smooth;
 }
+/* Para pantallas más pequeñas (menos de 768px, como tablets y móviles en modo horizontal) */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .card {
+        width: 80%; /* Hacer las cards más anchas en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Ajuste de tamaño de fuente */
+    }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px, como teléfonos móviles) */
+@media (max-width: 480px) {
+    .main-content .card {
+        width: 100%; /* Las cards ocupan todo el ancho en móviles pequeños */
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 14px; /* Font más pequeño en móviles */
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
