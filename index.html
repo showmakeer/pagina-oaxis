@@ -11,13 +11,54 @@
             width: 50px; /* Ajusta el tamaño de la imagen a 50px de ancho */
             height: auto; /* Mantiene la proporción original de la imagen */
         }
+
+        /* Centrar la imagen */
+        .foto-paciente {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; /* Añade un pequeño espacio debajo de la imagen */
+        }
+
+        /* Centrar las tablas */
+        table {
+            margin: 20px auto;
+        }
+
+        /* Estilos para centrar el menú (opcional si quieres que el menú también se vea centrado) */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 <body>
+    <!-- Menú de navegación -->
     <header>
-        <h1 class="parpadeo">OAXIS</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="que_es.html">¿Qué es?</a></li>
+                <li><a href="niños.html">Niños</a></li>
+                <li><a href="deportistas.html">Deportistas</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Contenido principal -->
     <main>
         <section>
             <h2>Bienvenidos a OAXIS.</h2>
@@ -54,6 +95,7 @@
             </tbody>
         </table>
 
+        <!-- Tabla de datos adicionales -->
         <table border="1">
             <thead>
                 <tr>
