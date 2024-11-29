@@ -6,46 +6,11 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Mi OAXIS</title>
     <style>
-        /* Centrar el contenido dentro del body */
-        body {
-            display: flex; /* Activar Flexbox */
-            justify-content: center; /* Centrar horizontalmente */
-            align-items: center; /* Centrar verticalmente */
-            height: 100vh; /* Usar toda la altura de la ventana */
-            margin: 0; /* Eliminar márgenes predeterminados */
-            font-family: Arial, sans-serif; /* Establecer una fuente básica */
-        }
-
-        /* Hacer que el contenido (imagen y tabla) no se salga del centro */
-        main {
-            text-align: center; /* Centrar el texto dentro de main */
-            padding: 20px; /* Espacio alrededor del contenido */
-        }
-
         /* Ajuste del tamaño de la imagen */
         .foto-paciente img {
-            width: 50px !important; /* Ajustar el tamaño de la imagen a 50px de ancho */
-            height: auto !important; /* Mantener la proporción original */
+            width: 50px !important; /* Ajusta el tamaño de la imagen a 50px de ancho */
+            height: auto !important; /* Mantiene la proporción original de la imagen */
         }
-
-        /* Estilo para las tablas */
-        table {
-            margin: 20px auto; /* Centrar la tabla horizontalmente */
-            border-collapse: collapse; /* Quitar los espacios entre celdas */
-            width: 80%; /* Ajustar el ancho de la tabla */
-        }
-
-        /* Estilo de las celdas de la tabla */
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd; /* Borde de celdas */
-        }
-
-        th {
-            background-color: #f4f4f4;
-        }
-
     </style>
 </head>
 <body>
@@ -70,7 +35,7 @@
         </section>
 
         <!-- Tabla de paciente -->
-        <table>
+        <table border="1">
             <thead>
                 <tr>
                     <th>ID Paciente</th>
@@ -87,9 +52,6 @@
                     <td>Alzheimer</td>
                 </tr>
             </tbody>
-        </table>
-
-        <table>
             <thead>
                 <tr>
                     <th>Dirección de residencia</th>
@@ -112,4 +74,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
