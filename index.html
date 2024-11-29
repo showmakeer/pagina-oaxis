@@ -6,11 +6,36 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Mi OAXIS</title>
     <style>
-        /* Ajuste del tamaño de la imagen */
-        .foto-paciente img {
-            width: 50px !important; /* Ajusta el tamaño de la imagen a 50px de ancho */
-            height: auto !important; /* Mantiene la proporción original de la imagen */
+        /* Estilo para centrar la foto */
+        .foto-paciente {
+            display: flex; /* Hacemos el contenedor un flexbox */
+            justify-content: center; /* Centra la imagen horizontalmente */
+            margin-bottom: 20px; /* Espacio abajo de la imagen */
         }
+
+        .foto-paciente img {
+            width: 50px !important; /* Ajustar el tamaño de la imagen a 50px de ancho */
+            height: auto !important; /* Mantener la proporción original */
+        }
+
+        /* Estilo para centrar las tablas */
+        table {
+            margin: 0 auto; /* Centra la tabla horizontalmente */
+            border-collapse: collapse; /* Quita los espacios entre las celdas */
+            width: 80%; /* Ajustar el ancho de la tabla */
+        }
+
+        /* Estilo de las celdas de la tabla */
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd; /* Borde de celdas */
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
     </style>
 </head>
 <body>
@@ -28,14 +53,14 @@
             <h3>INICIO:</h3>
             <p>PACIENTE NUMERO 1</p>
 
-            <!-- Imagen del paciente -->
+            <!-- Imagen centrada -->
             <div class="foto-paciente">
                 <img src="https://bolavip.com/__export/1665019606271/sites/bolavip/img/2022/10/05/carlo-ancelotti-real-madrid_crop1665019584470.jpg_242310155.jpg" alt="Carlo Ancelotti" />
             </div>
         </section>
 
-        <!-- Tabla de paciente -->
-        <table border="1">
+        <!-- Tabla de paciente centrada -->
+        <table>
             <thead>
                 <tr>
                     <th>ID Paciente</th>
@@ -52,6 +77,9 @@
                     <td>Alzheimer</td>
                 </tr>
             </tbody>
+        </table>
+
+        <table>
             <thead>
                 <tr>
                     <th>Dirección de residencia</th>
