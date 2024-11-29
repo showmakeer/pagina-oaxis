@@ -173,11 +173,11 @@ html {
     }
 }
 body .foto-paciente img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 .foto-paciente img {
-    width: 50px !important;
+    width: 100px !important;
     height: auto !important;
 }
 
